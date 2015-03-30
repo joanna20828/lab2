@@ -9,7 +9,8 @@ using namespace std;
 int main()
 {
 	string Cat;
-	float BMI,height,weight;
+	float bmi,height,weight;
+	BMI BMI1;
 	
 	/*opne file.in*/
 	ifstream inFile("file.in", ios::in);
@@ -28,9 +29,9 @@ int main()
 	outFile << "BMI\tCategory\n" ;
 	
 	while(inFile >> height >> weight){
-	BMI=BMI.calculate(height, weight) ;
-	Cat=BMI.Category(BMI); 
-	outFile << BMI << "\t" << Cat << endl;
+	bmi=BMI1.calculate(height, weight) ;
+	Cat=BMI1.Category(bmi); 
+	outFile << bmi << "\t" << Cat << endl;
 	}	
 }
 

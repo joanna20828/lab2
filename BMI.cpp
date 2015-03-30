@@ -8,6 +8,7 @@
 using namespace std;
 
 float BMI::calculate(float h, float w){
+	float BMI;
 	BMI=w/((h*0.01)*(h*0.01));
 	return BMI;
 }
